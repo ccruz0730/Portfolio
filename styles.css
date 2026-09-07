@@ -47,11 +47,10 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-weight: 600; letter-
 .scroll-note span { padding-left: 12px; color: var(--orange); font-size: 15px; }
 .client-strip { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 21px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: #8a8a82; font-size: 15px; }
 .client-strip p { margin: 0; color: var(--muted); font: 10px "DM Mono", monospace; text-transform: uppercase; }
-.client-strip span:nth-of-type(1) { font-weight: 700; letter-spacing: -.06em; }
-.client-strip span:nth-of-type(2) { font-family: Georgia, serif; font-size: 17px; }
-.client-strip span:nth-of-type(3) { font-size: 20px; font-weight: 700; letter-spacing: -.08em; }
-.client-strip span:nth-of-type(4) { font-family: Georgia, serif; font-style: italic; }
-.client-strip span:nth-of-type(5) { font: 11px "DM Mono", monospace; letter-spacing: .1em; }
+.club-logo { display: block; width: 106px; transition: transform .2s ease; }
+.club-logo:hover { transform: translateY(-2px); }
+.club-logo img { display: block; width: 100%; height: auto; }
+.client-strip span { font: 11px "DM Mono", monospace; text-transform: uppercase; letter-spacing: .06em; }
 .section-pad { padding: 150px 0; }
 .section-heading h2 { margin: 0; font-size: clamp(49px, 6vw, 82px); }
 .project-list { display: grid; grid-template-columns: 1.25fr .75fr; gap: 70px; align-items: start; margin-top: 105px; }
@@ -101,7 +100,8 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-weight: 600; letter-
   .client-strip { flex-wrap: wrap; justify-content: flex-start; gap: 14px 22px; }
   .client-strip p { flex-basis: 100%; }
   .client-strip span { display: none; }
-  .client-strip span:nth-of-type(1), .client-strip span:nth-of-type(3), .client-strip span:nth-of-type(4) { display: block; }
+  .client-strip span:nth-of-type(1) { display: block; }
+  .club-logo { width: 104px; }
   .section-pad { padding: 95px 0; }
   .project-list { display: block; margin-top: 65px; }
   .project-secondary { margin-top: 75px; }
